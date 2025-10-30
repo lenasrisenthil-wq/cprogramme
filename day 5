@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main() {
+    float l, b, s, base, height, r;
+    float area_rect, area_square, area_tri, area_circle;
+    const float PI = 3.14159;
+
+    printf("Enter length and breadth of rectangle: ");
+    scanf("%f %f", &l, &b);
+    area_rect = l * b;
+
+    printf("Enter side of square: ");
+    scanf("%f", &s);
+    area_square = s * s;
+
+    printf("Enter base and height of triangle: ");
+    scanf("%f %f", &base, &height);
+    area_tri = 0.5 * base * height;
+
+    printf("Enter radius of circle: ");
+    scanf("%f", &r);
+    area_circle = PI * r * r;
+
+    printf("\nArea of Rectangle = %.2f", area_rect);
+    printf("\nArea of Square = %.2f", area_square);
+    printf("\nArea of Triangle = %.2f", area_tri);
+    printf("\nArea of Circle = %.2f", area_circle);
+
+    return 0;
+}
+Q2.
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x1, y1, x2, y2, distance;
+
+    printf("Enter coordinates of first point (x1 y1): ");
+    scanf("%f %f", &x1, &y1);
+
+    printf("Enter coordinates of second point (x2 y2): ");
+    scanf("%f %f", &x2, &y2);
+
+    distance = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
+
+    printf("Distance between two points = %.2f", distance);
+
+    return 0;
+}
+Q3.
+#include <stdio.h>
+
+int main() {
+    float P, R, T, SI;
+
+    printf("Enter Principal, Rate and Time: ");
+    scanf("%f %f %f", &P, &R, &T);
+
+    SI = (P * R * T) / 100;
+
+    printf("Simple Interest = %.2f", SI);
+
+    return 0;
+}
