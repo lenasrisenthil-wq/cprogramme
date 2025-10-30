@@ -1,0 +1,36 @@
+Q3.
+#include <stdio.h>
+int main() {
+    char message[100];
+    printf("Enter a message: ");
+    gets(message);   // or use fgets(message, 100, stdin);
+    printf("You entered: %s", message);
+    return 0;
+}
+Q4.
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    printf("The number is: %d", num);
+    return 0;
+}
+Q5.
+#include <stdio.h>
+int main() {
+    float num;
+    printf("Enter a float number: ");
+    scanf("%f", &num);
+    printf("The number is: %f", num);
+    return 0;
+}
+Q6.
+#include <stdio.h>
+int main() {
+    float num;
+    printf("Enter a float number: ");
+    scanf("%f", &num);
+    printf("The number is: %.2f", num);  // prints with 2 decimal places
+    return 0;
+}
