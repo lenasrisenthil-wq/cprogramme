@@ -1,0 +1,73 @@
+Q2 
+#include <stdio.h>
+int main() {
+    int a, b, c;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    // Greatest
+    if (a >= b && a >= c)
+        printf("Greatest: %d\n", a);
+    else if (b >= a && b >= c)
+        printf("Greatest: %d\n", b);
+    else
+        printf("Greatest: %d\n", c);
+
+    // Smallest
+    if (a <= b && a <= c)
+        printf("Smallest: %d\n", a);
+    else if (b <= a && b <= c)
+        printf("Smallest: %d\n", b);
+    else
+        printf("Smallest: %d\n", c);
+
+    return 0;
+}
+Q3 
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n % 2 == 0)
+        printf("The number is Even\n");
+    else
+        printf("The number is Odd\n");
+
+    return 0;
+}
+Q4.
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n > 0)
+        printf("Positive number\n");
+    else if (n < 0)
+        printf("Negative number\n");
+    else
+        printf("Number is Zero\n");
+
+    return 0;
+}
+Q5.
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    if (ch >= 'A' && ch <= 'Z')
+        printf("Uppercase letter\n");
+    else if (ch >= 'a' && ch <= 'z')
+        printf("Lowercase letter\n");
+    else if (ch >= '0' && ch <= '9')
+        printf("Digit\n");
+    else
+        printf("Special symbol\n");
+
+    return 0;
+}
